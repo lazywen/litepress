@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{title}} - lazywen</title>
+	
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="lazywen's blog." />
+  <meta name="keywords" content="Moke, Voodo, iOS, iPhone, iPad, app, OS X, Mac, Apple" />
+  <meta name="author" content="lazy" />
+
+	<link rel="shortcut icon" href="/favicon.png" />
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed" />
+
+	<link rel="stylesheet" href="/css/default.css" />
+	<link rel="stylesheet" href="/css/animations.css" />
+</head>
+<body>
+  <header role="banner" id="post-head">
+    <div class="header">
+      <div class="container">
+        <section class="name">
+        <a href="/"><b>lazywen</b>'s home</a>
+        </section>
+
+        <ul class="menu">
+          <li class="about"><a href="/about">About</a></li>
+          <li class="album"><a href="http://pic.lazywen.com/">Album</a></li>
+          <li class="rss"><a href="/rss">Rss</a></li>
+        </ul>
+
+        <ul class="social headlinks">
+            <li class="twitter">
+              <a href="http://twitter.com/lazywen"><img src="/img/twitter.png" alt="Twitter" /></a>
+            </li>
+			<li class="github">
+			  <a href="http://github.com/lazywen"><img src="/img/github.png" alt="GitHub" /></a>
+			</li>
+            <li class="weibo">
+              <a href="http://weibo.com/lazywen"><img src="/img/weibo.png" alt="微博" /></a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section role="main" class="container">
+	  <article>
+	    <header>
+		    <p class="meta" id="time"><time datetime="{{date}}"><a href="{{monthly_archive_url}}">{{month}}</a> {{day}}, {{year}}</time></p>
+	      <h1>{{title}}</h1>
+	    </header>
+	    <section class="content">
+	      {{content}}
+	    </section>
+	    <footer role="contentinfo" class="post-foot">
+	      <section class="post-foot-top">
+	 		    <p class="meta" id="tags">{{tags}}</p>
+	      </section>
+          <section class="bio">
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = 'lazywen'; // required: replace example with your forum shortname
+
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+          </section>
+	    </footer>
+	  </article>  
+  </section>
+    
+  <footer id="footer">
+    <section class="container">
+      <p>Powered by <a href="https://github.com/an0/Letterpress">Letterpress</a>.</p>
+    </section>
+  </footer>
+
+</body>
+</html>
